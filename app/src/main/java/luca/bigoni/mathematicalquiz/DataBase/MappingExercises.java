@@ -10,9 +10,9 @@ import java.util.ListIterator;
 
 public class MappingExercises {
     public int ID;
-    public   int ID_LEVEL;
-    public  int ID_EXER;
-    public  String S_EXER;
-    public  String S_RIS;
-    public  boolean B_ISCOMPLETE;
+    public int ID_LEVEL;
+    public int ID_EXER;
+    public String S_EXER;
+    public String S_RIS;
+    public boolean B_ISCOMPLETE;
 }

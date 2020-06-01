@@ -28,17 +28,18 @@
         <TableRow
             android:id="@+id/row_main_top"
             android:layout_weight="36"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
 
             <LinearLayout
                 android:id="@+id/main_exercise"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
                 android:padding="16dp">
 
                 <!-- Here is the inserted layout -->
-                <include layout="@layout/level001n001"/>
+                <include layout="@layout/level001n001" />
 
             </LinearLayout>
         </TableRow>
