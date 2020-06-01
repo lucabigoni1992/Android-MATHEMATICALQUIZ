@@ -21,6 +21,8 @@ import androidx.appcompat.widget.Toolbar;
 
 import android.view.Menu;
 
+import luca.bigoni.mathematicalquiz.DataBase.DataBaseHandler;
+
 public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
@@ -51,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
+        DataBaseHandler dbh=new DataBaseHandler(this);
     }
 
     @Override
