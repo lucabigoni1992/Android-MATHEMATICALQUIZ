@@ -1,7 +1,6 @@
-package luca.bigoni.mathematicalquiz.ui.gallery;
+package luca.bigoni.mathematicalquiz.ui.NumericSeries;
 
 import android.os.Bundle;
-import android.provider.DocumentsContract;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.Gravity;
@@ -9,23 +8,17 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.LinearLayout;
-import android.widget.PopupMenu;
 import android.widget.PopupWindow;
 import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.annotation.NonNull;
-import androidx.appcompat.widget.AppCompatButton;
-import androidx.appcompat.widget.AppCompatTextView;
-import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
 import java.util.ArrayList;
-import java.util.List;
 
 import luca.bigoni.mathematicalquiz.DataBase.DataBaseHandler;
 import luca.bigoni.mathematicalquiz.DataBase.MappingExercises;
@@ -33,9 +26,9 @@ import luca.bigoni.mathematicalquiz.R;
 
 import static android.content.Context.LAYOUT_INFLATER_SERVICE;
 
-public class GalleryFragment extends Fragment {
+public class NumericSeriesFragment extends Fragment {
 
-    private  GalleryViewModel galleryViewModel;
+    private  NumericSeriesViewModel galleryViewModel;
     private View root;
     private LayoutInflater inf = null ;
     private View customView = null;
@@ -96,8 +89,8 @@ public class GalleryFragment extends Fragment {
     public  View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         galleryViewModel =
-                ViewModelProviders.of(this).get(GalleryViewModel.class);
-        root = inflater.inflate(R.layout.fragment_gallery, container, false);
+                ViewModelProviders.of(this).get(NumericSeriesViewModel.class);
+        root = inflater.inflate(R.layout.fragment_numeric_series, container, false);
         final TextView textView = root.findViewById(R.id.text_gallery);
         galleryViewModel.getText().observe(this, new Observer<String>() {
             @Override

@@ -1,16 +1,16 @@
-package luca.bigoni.mathematicalquiz.ui.gallery;
+package luca.bigoni.mathematicalquiz.ui.NumericSeries;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class GalleryViewModel extends ViewModel {
+public class NumericSeriesViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public GalleryViewModel() {
+    public NumericSeriesViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is gallery fragment");
+        mText.setValue("This is NumericSeries fragment");
     }
 
     public LiveData<String> getText() {

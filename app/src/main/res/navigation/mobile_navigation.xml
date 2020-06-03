@@ -12,10 +12,10 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="luca.bigoni.mathematicalquiz.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/nav_numeric_series"
+        android:name="luca.bigoni.mathematicalquiz.ui.NumericSeries.NumericSeriesFragment"
+        android:label="@string/menu_SerieNumeriche"
+        tools:layout="@layout/fragment_numeric_series" />
 
     <fragment
         android:id="@+id/nav_slideshow"
@@ -38,6 +38,11 @@
     <fragment
         android:id="@+id/nav_send"
         android:name="luca.bigoni.mathematicalquiz.ui.send.SendFragment"
+        android:label="@string/menu_send"
+        tools:layout="@layout/fragment_send" />
+    <fragment
+        android:id="@+id/nav_contat_support"
+        android:name="luca.bigoni.mathematicalquiz.ui.contatSupport.ContatSupportFragment"
         android:label="@string/menu_send"
         tools:layout="@layout/fragment_send" />
 </navigation>

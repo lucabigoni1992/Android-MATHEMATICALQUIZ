@@ -14,4 +14,9 @@
     <string name="menu_share">Share</string>
     <string name="menu_send">Send</string>
     <string name="Cancel">Cancel</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_SerieNumeriche">Serie Numeriche</string>
+    <string name="menu_QuizLogici">Quiz Logici</string>
+    <string name="menu_Random">Random</string>
+    <string name="menu_contat_support">Contat Support</string>
 </resources>
