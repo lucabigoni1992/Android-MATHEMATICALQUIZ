@@ -1,16 +1,16 @@
-package luca.bigoni.mathematicalquiz.ui.home;
+package luca.bigoni.mathematicalquiz.ui.contatSupport;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class HomeViewModel extends ViewModel {
+public class ContatSupportViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public HomeViewModel() {
+    public ContatSupportViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is home fragment");
+        mText.setValue("This is contat_support fragment");
     }
 
     public LiveData<String> getText() {
