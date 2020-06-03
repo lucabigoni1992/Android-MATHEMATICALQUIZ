@@ -17,6 +17,8 @@ public class DataBaseHandler extends SQLiteOpenHelper {
     private static SQLiteDatabase db;
 
 
+
+
     @Override
     public SQLiteDatabase getReadableDatabase() {
         return super.getReadableDatabase();
@@ -57,7 +59,11 @@ public class DataBaseHandler extends SQLiteOpenHelper {
          sql = "" ;
         db.execSQL(sql);
     }
-
+    public static void cleanExer() {
+        sql = "UPDATE   EXERCISES " +
+                "SET    B_ISCOMPLETE=0\n";
+        db.execSQL(sql);
+    }
     public static void UpdateSuccessExercises(MappingExercises exer) {
         sql = "UPDATE   EXERCISES " +
                 "SET    B_ISCOMPLETE=1\n" +
@@ -78,7 +84,7 @@ public class DataBaseHandler extends SQLiteOpenHelper {
                     excur.ID_LEVEL= c.getInt(2);
                     excur.S_EXER= c.getString(3);
                     excur.S_RIS= c.getString(4);
-                    excur.B_ISCOMPLETE= c.getInt(5)==0;
+                    excur.B_ISCOMPLETE= c.getInt(5)==1;
                 return excur;
                 }
                 // Do something Here with values
