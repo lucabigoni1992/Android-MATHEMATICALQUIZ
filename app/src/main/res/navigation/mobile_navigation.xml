@@ -20,13 +20,13 @@
     <fragment
         android:id="@+id/nav_slideshow"
         android:name="luca.bigoni.mathematicalquiz.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
+        android:label="@string/menu_QuizLogici"
         tools:layout="@layout/fragment_slideshow" />
 
     <fragment
         android:id="@+id/nav_tools"
         android:name="luca.bigoni.mathematicalquiz.ui.tools.ToolsFragment"
-        android:label="@string/menu_tools"
+        android:label="@string/menu_Random"
         tools:layout="@layout/fragment_tools" />
 
     <fragment
@@ -43,6 +43,6 @@
     <fragment
         android:id="@+id/nav_contat_support"
         android:name="luca.bigoni.mathematicalquiz.ui.contatSupport.ContatSupportFragment"
-        android:label="@string/menu_send"
+        android:label="@string/Support"
         tools:layout="@layout/fragment_send" />
 </navigation>

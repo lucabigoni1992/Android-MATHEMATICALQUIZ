@@ -8,6 +8,11 @@
     android:fitsSystemWindows="true"
     tools:openDrawer="start">
 
+    <Button
+        android:id="@+id/provaPublicita"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="4" />
     <include
         layout="@layout/app_bar_main"
         android:layout_width="match_parent"

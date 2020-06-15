@@ -15,4 +15,5 @@ public class MappingExercises {
     public String S_EXER;
     public String S_RIS;
     public boolean B_ISCOMPLETE;
+    public int I_TYPE_OF_EXER;//0 NUERIC SERIES
 }

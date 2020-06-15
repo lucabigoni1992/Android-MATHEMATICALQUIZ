@@ -26,6 +26,7 @@ import luca.bigoni.mathematicalquiz.R;
 
 import static android.content.Context.LAYOUT_INFLATER_SERVICE;
 
+
 public class NumericSeriesFragment extends Fragment {
 
     private  NumericSeriesViewModel galleryViewModel;
@@ -127,6 +128,7 @@ public class NumericSeriesFragment extends Fragment {
     }
 
     private void LoadComplite() {
+
         PopupAll("All EXERCISES HAS BEEN COMPLETE \n Congratulation! you are the best!\n we will add new exercises soon!",
                 "Go back on Main Page!",
                 new View.OnClickListener() {
